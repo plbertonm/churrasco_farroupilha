@@ -83,14 +83,17 @@ function main(): void {
 
     if (!get_dados_login($email, $senha)) {
         header("Location: login.php?error=DataError");
+        $_SESSION['logado'] = false;
         exit();
     }
 
     if (!compare_dado_com_banco($email, $senha)) {
         header("Location: login.php?error=DataError");
+        $_SESSION['logado'] = false;
         exit();
     }
 
+    $_SESSION['logado'] = true;
     $_SESSION['usuario'] = get_nome_por_email($email);
     $_SESSION['email'] = $email;
 
