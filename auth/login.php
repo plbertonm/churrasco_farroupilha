@@ -14,5 +14,16 @@
         <input type="password" name="senha" id="senha" placeholder="Senha...">
         <button type="submit">Logar</button>
     </form>
+
+    <div id="error">
+        <?php
+        if ($_GET['error']) {
+            $error = $_GET['error'];
+            if ($error == 'DataError') {
+                echo "<h2>Erro: Dados Inválidos Enviados ou conexão com banco falhou!</h2>";
+            }
+        }
+        ?>
+    </div>
 </body>
 </html>
