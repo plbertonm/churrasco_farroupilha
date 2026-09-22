@@ -8,8 +8,8 @@
 <body>
     <h1>Login - Churrasco</h1>
     <form action="autenticar.php" method="post">
-        <label for="usuario">Usuário:</label>
-        <input type="text" name="usuario" id="usuario" placeholder="Usuario...">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email...">
         <label for="usuario">Senha:</label>
         <input type="password" name="senha" id="senha" placeholder="Senha...">
         <button type="submit">Logar</button>
