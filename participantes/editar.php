@@ -1,12 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-include_once __DIR__ . "../config/conexao.php";
-include_once __DIR__ . "../auth/verificar_login.php";
-=======
 include_once __DIR__ . "/../config/conexao.php";
 include_once __DIR__ . "/../auth/verificar_login.php";
->>>>>>> c500b086edcbb2a4d142f57a0a36fada6d3ff918
 
 $id = $_GET["id"] ?? "";
 
