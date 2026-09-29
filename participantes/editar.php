@@ -1,6 +1,7 @@
 <?php
 
 require_once "../config/conexao.php";
+require_once '../auth/verificar_login.php';
 
 $id = $_GET["id"] ?? "";
 
