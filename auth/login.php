@@ -25,5 +25,7 @@
         }
         ?>
     </div>
+
+    <a href="cadastro.php">Cadastrar</a>
 </body>
 </html>
