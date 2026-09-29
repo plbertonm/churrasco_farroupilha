@@ -1,6 +1,6 @@
 <?php
 
-require_once "../marlon/churrasco/churrasco_farroupilha/config/conexao.php";
+require_once __DIR__ . "../config/conexao.php";
 session_start();
 
 function get_dados_login(string &$email, string &$senha): bool {

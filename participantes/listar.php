@@ -1,7 +1,7 @@
 <?php
 
-require_once "../config/conexao.php";
-require_once '../auth/verificar_login.php';
+include_once __DIR__ . "../auth/verificar_login.php";
+include_once __DIR__ . "../auth/verificar_login.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -154,9 +154,13 @@ $resultado = $conexao->query($sql);
             </td>
             <td>
                 <a href="editar.php?id=<?= $churras["id"] ?>">Editar</a>
+<<<<<<< HEAD
 
                 <a href="excluir.php?id=<?= $churras["id"] ?>" onclick="return confirmarExclusao()">Excluir</a>
 
+=======
+                <a href="excluir.php?id=<?= $churras["id"] ?>" onclick="return confirmarExclusao()">Excluir</a>
+>>>>>>> c9d1ed62d492214166162f7d68fd7663eb707e46
             </td>
         </tr>
     <?php endwhile; ?>
