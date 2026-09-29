@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . "../auth/verificar_login.php";
+include_once __DIR__ . "/../auth/verificar_login.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,54 +11,67 @@ include_once __DIR__ . "../auth/verificar_login.php";
 </head>
 
 <body>
+
     <h1>Cadastrar participante</h1>
 
-    <form action="atualizar.php" method="post">
+    <form action="salvar.php" method="post" id="formCadastro">
 
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" >
+        <input type="text" name="nome" id="nome">
+
+        <br><br>
 
         <label for="turma">Turma:</label>
-        <input type="text" name="turma" >
+        <input type="text" name="turma" id="turma">
+
+        <br><br>
 
         <label for="telefone">Telefone:</label>
-        <input type="text" name="telefone" >
+        <input type="text" name="telefone" id="telefone">
 
-        <label>Tipo de churrasco:</label>
-        <select name="confirmado">
-            <option value="0">
-                Tradicional
-            </option>
-            <option value="1">
-                Vegetariano
-            </option>
+        <br><br>
+
+        <label for="tipo_churrasco">Tipo de churrasco:</label>
+        <select name="tipo_churrasco" id="tipo_churrasco">
+            <option value="">Selecione</option>
+            <option value="Tradicional">Tradicional</option>
+            <option value="Vegetariano">Vegetariano</option>
         </select>
+
+        <br><br>
 
         <label for="acompanhamento">Acompanhamento:</label>
-        <input type="text" name="acompanhamento" >
+        <input type="text" name="acompanhamento" id="acompanhamento">
+
+        <br><br>
 
         <label for="confirmado">Presença:</label>
-        <select name="confirmado">
-            <option value="1">
-                Confirmado
-            </option>
-            <option value="0">
-                Não confirmado
-            </option>
+        <select name="confirmado" id="confirmado">
+            <option value="">Selecione</option>
+            <option value="1">Confirmado</option>
+            <option value="0">Não confirmado</option>
         </select>
+
+        <br><br>
+
         <label for="pago">Pagamento:</label>
-        <select name="pago">
-            <option value="1">
-                Pago
-            </option>
-             <option value="0">
-                Pendente
-            </option>
+        <select name="pago" id="pago">
+            <option value="">Selecione</option>
+            <option value="1">Pago</option>
+            <option value="0">Pendente</option>
         </select>
-        <button type="submit">Salvar alterações</button>
+
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+
     </form>
+
     <br>
+
     <a href="listar.php">Voltar</a>
+
+    <script src="../js/cadastrar.js"></script>
 
 </body>
 </html>
