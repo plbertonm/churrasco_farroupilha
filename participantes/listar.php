@@ -69,12 +69,13 @@ $resultado = $conexao->query($sql);
             <td><?= ($churras["pago"] ? "Sim" : "Não") ?></td>
             <td>
                 <a href="editar.php?id=<?= $churras["id"] ?>">Editar</a>
-                <a href="excluir.php?id=<?= $churras["id"] ?>">Excluir</a>
+                <a href="excluir.php?id=<?= $churras["id"] ?>" onclick="return confirmarExclusao()">Excluir</a>
             </td>
         </tr>
     <?php endwhile; ?>
 </table>
 <br>
-<a href="index.php">Voltar</a>
+<a href="../index.php">Voltar</a>
+<script src="../js/script.js"></script>
 </body>
 </html>
