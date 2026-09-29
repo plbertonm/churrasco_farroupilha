@@ -1,7 +1,7 @@
 <?php
 
-include_once __DIR__ . "../auth/verificar_login.php";
-include_once __DIR__ . "../auth/verificar_login.php";
+include_once __DIR__ . "/../config/conexao.php";
+include_once __DIR__ . "/../auth/verificar_login.php";
 
 $id = $_GET["id"] ?? "";
 
