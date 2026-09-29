@@ -1,5 +1,5 @@
 <?php
-include_once "../auth/verificar_login.php";
+include_once __DIR__ . "../auth/verificar_login.php";
 ?>
 
 <!DOCTYPE html>
