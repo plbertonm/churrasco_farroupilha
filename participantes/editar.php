@@ -1,6 +1,8 @@
 <?php
 
 require_once "../config/conexao.php";
+require_once '../auth/verificar_login.php';
+
 $id = $_GET["id"] ?? "";
 $sql = "SELECT * FROM participantes WHERE id = $id";
 $resultado = $conexao->query($sql);

@@ -17,7 +17,7 @@
 
     <div id="error">
         <?php
-        if ($_GET['error']) {
+        if (isset($_GET['error'])) {
             $error = $_GET['error'];
             if ($error == 'DataError') {
                 echo "<h2>Erro: Dados Inválidos Enviados ou conexão com banco falhou!</h2>";

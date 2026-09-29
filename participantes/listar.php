@@ -1,6 +1,7 @@
 <?php
 
 require_once "../config/conexao.php";
+require_once '../auth/verificar_login.php';
 
 $pesquisa = $_GET["pesquisa"] ?? "";
 $pagamento = $_GET["pagamento"] ?? "";
