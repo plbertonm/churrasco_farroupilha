@@ -53,6 +53,7 @@ $resultado = $conexao->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Lista de participantes</title>
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 <h1>Lista de participantes</h1>
